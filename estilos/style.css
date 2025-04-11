@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+:root{
+    --cor01: #ffeb3b
+}
+
 *{
     margin: 0;  
     padding: 0;
@@ -9,4 +13,25 @@
 
 body{
     font-family: source s;
+
+}
+
+header{
+    background: var(--cor01);
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header > h1{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 35px;
+    margin-left: 5px;
+}
+
+#logoesi{
+    margin: auto;
+    margin: 0px ;
+    margin-left: 120px;
 }
