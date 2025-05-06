@@ -12,24 +12,110 @@
 }
 
 body{
-    font-family: source s;
+    font-family: source s, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+
 
 }
 
 header{
     background: var(--cor01);
     height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
     
     
 }
 header > h1{
     color: #fff;
     font-size: 1.5rem;
+    margin: 0;
+    padding-left: 15px;
+    cursor: pointer;
+    
+    
+}
+
+header > h1 >a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header > h2{
+    padding-right: 15px;
+    font-size: 1.3em;
 }
 
 .imglogo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 15vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    
     
 }
+nav {
+    border: 1px solid #000;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > .links{
+    display: flex;
+    gap: 30px;
+
+}
+
+nav > .links > a {
+    font-size: 1.6em;
+    color: grey;
+    text-decoration: none;
+    margin-right: 10px;
+
+}
+ nav > .menu{
+    margin-left: 10px;
+    font-size: 30px;
+    cursor: pointer;
+ }
+
+ .container{
+    display: flex;
+    flex: 1;
+    transition: all 0.3s ease;
+   
+
+ }
+
+ .menu-sand{
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+ }
+
+ .menu-sand.active{
+    width: 20%;
+ }
+
+ .menu-sand > a{
+    display:block;
+    padding: 10px 0;
+    color:#000;
+    text-decoration: none;
+ }
+
+ main{
+    flex: 1;
+    padding: 20px;
+    transition: width 0.3s ease;
+
+ }
+
