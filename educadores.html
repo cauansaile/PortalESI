@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Escola Sonho infantil</title>
+    <link rel="shortcut icon" href="/imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+
+    <style>
+
+        
+
+        main > .prof1{
+            
+            background-color: white;
+            padding: 10px 10px 30px 10px;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.34);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.2s;
+
+        }
+
+        main > .prof1:hover{
+            transform: rotate(-2deg) scale(1.02);
+
+        }
+
+        .prof1 > img{
+            width: 100%;
+            display: block;
+        }
+
+        .prof1 > .legenda{
+            margin-top: 10px;
+            font-size: 14px;
+
+        }
+
+        .lightbox{
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox.active{
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 6px;
+            box-shadow: 0 0 15 rgba(0, 0, 0, 0.408);
+        }
+
+        .close-btn{
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 36px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .lightbox p {
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Escola Sonho Infantil</a> </h1>
+        <h2>Matriculas 2025</h2>
+        <div class="imglogo"><img src="imagens/images.jpg" alt="Logo ESI" class="logoesi"></div>
+        
+        
+        
+        
+    </header>
+    <nav>
+            <div class="menu"><span class="material-icons md-24" id="menu" >menu</span></div>
+            
+            <div class="links">
+                <a href="https://www.instagram.com/sonhoinfantilescola?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+                <a href="#">WhatsApp</a>
+                <a href="https://www.facebook.com/escolaehotelzinhosonhoinfantil?locale=pt_BR" target="_blank">Facebook</a>
+            </div>
+
+            
+            
+        
+    </nav>
+    <div class="container">
+        <div class="menu-sand">
+            <a href="educadores.html">Nossos educadores</a>
+            <a href="#">Nossa metodologia</a>
+            <a href="#">Apoio socioemocional</a>
+            <a href="#">Atividades extracurriculares</a>
+            <a href="#">Contato</a>
+
+        </div>
+
+
+        <main>
+            <div class="prof1" onclick="abrirLightbox(this)" descricao-legenda="Professora, formada em Letras com Espanhol (UNEB)
+            Pós graduada em Coordenação pedagógica
+            ABA
+            Pós graduanda em Psicopedagogia" >
+                <img src="imagens/foto-carol.png" alt="">
+                <div class="legenda">Carolina Saile <br> Coordenadora</div>
+            </div>
+            
+
+            <div id="lightbox" class="lightbox" onclick="fecharLightbox(event)">
+                <span class="close-btn" onclick="fecharLightbox(event)">×</span>
+                <img id="lightbox-img" src="" alt="Imagem Ampliada">
+                <p id="lightbox-texto"></p>
+              </div>
+        </main>
+
+
+
+    <script src="js/script.js"></script>    
+</body>
+</html>
