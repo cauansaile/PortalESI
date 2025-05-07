@@ -22,7 +22,7 @@ body{
 }
 
 header{
-    background: var(--cor01);
+    background: #fbeb5a;
     height: 15vh;
     display: flex;
     align-items: center;

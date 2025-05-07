@@ -12,6 +12,13 @@
 
         
 
+        main{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+
         main > .prof1{
             
             background-color: white;
@@ -21,6 +28,7 @@
             width: 250px;
             text-align: center;
             transition: transform 0.2s;
+            max-height: 300px;
 
         }
 
@@ -84,7 +92,7 @@
     <header>
         <h1><a href="index.html">Escola Sonho Infantil</a> </h1>
         <h2>Matriculas 2025</h2>
-        <div class="imglogo"><img src="imagens/images.jpg" alt="Logo ESI" class="logoesi"></div>
+        <div class="imglogo"><img src="imagens/images-removebg-preview.png" alt="Logo ESI" class="logoesi"></div>
         
         
         
@@ -121,6 +129,10 @@
             Pós graduanda em Psicopedagogia" >
                 <img src="imagens/foto-carol.png" alt="">
                 <div class="legenda">Carolina Saile <br> Coordenadora</div>
+            </div>
+            <div class="prof1" onclick="abrirLightbox(this)" descricao-legenda="Diretora da E.S.I há mais de 25 anos, Formada em Pedagogia, especialista em crianças atípicas." >
+                <img src="imagens/foto-angela.png" alt="">
+                <div class="legenda">Ângela Cristina <br> Diretora</div>
             </div>
             
 
