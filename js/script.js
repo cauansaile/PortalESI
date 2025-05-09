@@ -1,8 +1,10 @@
 
 const menuBtn = document.querySelector('.menu')
 const menusand = document.querySelector('.menu-sand') 
+const main = document.querySelector('main')
     menuBtn.addEventListener('click', () => {
     menusand.classList.toggle('active');
+    main.classList.toggle('menu-open')
     });
 
 
