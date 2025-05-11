@@ -7,11 +7,11 @@
     <title>Escola Sonho infantil</title>
     <link rel="shortcut icon" href="/imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
+    
 </head>
 <body>
     <header>
         <h1><a href="index.html">Escola Sonho Infantil</a> </h1>
-        <h2>Matriculas 2025</h2>
         <div class="imglogo"><img src="imagens/images-removebg-preview.png" alt="Logo ESI" class="logoesi"></div>
         
         
@@ -36,10 +36,11 @@
             <a href="educadores.html">Nossos educadores</a>
             <a href="#metodologia">Nossa metodologia</a>
             <a href="#socioemocional">Apoio socioemocional</a>
-            <a href="#">Atividades extracurriculares</a>
-            <a href="#rodape">Contato</a>
+            <a href="#atividades">Atividades extracurriculares</a>
+            <a href="#contato">Contato</a>
 
         </div>
+
         <main>
 
             <div class="capa">
@@ -65,6 +66,48 @@
                 <img src="imagens/imagem-socio.jpg" alt="imagem socioemocional" class="imagem-socio">
 
            </section>
+
+            <section id="atividades">
+
+                <img src="imagens/imagem-atvs.jpg" alt="imagem atividades" class="imagem-atvs">
+               <div class="text-atvs">
+                   <h1>Atividades extracurriculares</h1>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, fugiat officiis reiciendis ipsam eos aliquam inventore magni nam eligendi asperiores a nisi provident ad illo corporis fugit sequi. Natus, quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, iste. Magnam et sunt, fuga, hic ex quam libero itaque consectetur maiores delectus, molestiae nihil alias iure quas voluptatibus officia praesentium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aut inventore minus modi ipsam eligendi consectetur distinctio, ullam velit error quis accusamus quo autem quod reprehenderit, aspernatur in. Praesentium, eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit provident iure assumenda atque laborum eaque repudiandae quibusdam odio explicabo! Ipsum aspernatur ducimus accusamus magni saepe eius error cum cupiditate quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vitae, quisquam illo quia sed dolor ut quae repellat hic eaque, aut dolorem eligendi. Mollitia dicta cupiditate modi iusto illum maxime!</p>
+               </div>
+           </section>
+
+           <section id="contato">
+                <h1 style="text-align: center; margin-bottom: 20px;">Fale Conosco</h1>
+                <form id="formContato" class="formulario-contato">
+                    <label for="responsavel">Nome do responsável:</label>
+                    <input type="text" id="responsavel" required>
+
+                    <label for="aluno">Nome do aluno:</label>
+                    <input type="text" id="aluno" required>
+
+                    <label for="idade">Idade do aluno:</label>
+                    <input type="number" id="idade" required>
+
+                    <label for="serie">Série pretendida:</label>
+                    <select id="serie" required>
+                    <option value="">Selecione</option>
+                    <option>Maternal</option>
+                    <option>Grupo 4</option>
+                    <option>Grupo 5</option>
+                    <option>Primeiro ano</option>
+                    <option>Segundo ano</option>
+                    <option>Terceiro ano</option>
+                    <option>Quarto ano</option>
+                    <option>Quinto ano</option>
+                    </select>
+
+                    <label for="mensagem">Mensagem adicional (opcional):</label>
+                    <textarea id="mensagem" rows="4"></textarea>
+
+                    <button type="submit">Enviar pelo WhatsApp</button>
+                </form>
+            </section>
+
 
 
             

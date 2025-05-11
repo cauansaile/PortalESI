@@ -1,8 +1,12 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Quicksand:wght@300..700&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
     --cor01: #ffeb3b
 }
+
+
+
 
 
 
@@ -15,7 +19,7 @@
 }
 
 body{
-    font-family: source s, sans-serif;
+    font-family: "Quicksand", sans-serif;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -81,6 +85,7 @@ nav {
     left: 0;
     width: 100%;
     z-index: 999;
+    
 }
 
 nav > .links{
@@ -241,4 +246,238 @@ main.menu-open {
 
  }
 
+ .imagem-atvs{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    flex-shrink: 0;
+ }
 
+.text-atvs{
+    margin: 10px;
+    max-width: 400px;
+    flex: 1;
+    margin-left: auto;
+ }
+
+.text-atvs p{
+    text-align: justify;
+
+ }
+
+.formulario-contato {
+  background-color: #fbf29d;
+  padding: 30px;
+  margin: auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.formulario-contato label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.formulario-contato input,
+.formulario-contato select,
+.formulario-contato textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.formulario-contato button {
+  margin-top: 20px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario-contato button:hover {
+  background-color: #1ebe5d;
+}
+
+
+
+
+/*@media screen and (max-width: 768px) {
+    header, nav {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+    }
+
+    .imglogo {
+        position: static;
+        transform: none;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    nav {
+        top: auto;
+
+    }
+
+    nav .links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        margin-top: 30vh; /* Ajustado para altura variável do header/nav 
+    }
+
+    .menu-sand {
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fcef75;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-sand a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-sand a:hover {
+    background-color: #d8c300;
+}
+
+.menu-sand.active {
+    width: 100%;
+}
+
+.menu-sand .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  margin-left: 15px;
+  z-index: 10001;
+}
+
+.menu div {
+  background-color: #333;
+  height: 4px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animação para virar X 
+.menu.active .bar1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.menu.active .bar2 {
+  opacity: 0;
+}
+.menu.active .bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+main.menu-open {
+   margin-left: 0;
+}
+
+main {
+   width: 100%;
+}
+
+section {
+   flex-direction: column;
+   margin: 40px 20px;
+   gap: 20px;
+}
+
+.imagem-meto,
+.imagem-socio,
+.imagem-atvs {
+   width: 100%;
+   height: auto;
+}
+
+.text-meto,
+.text-socio,
+.text-atvs {
+   max-width: 100%;
+   margin: 0;
+}
+
+.formulario-contato {
+   margin: 20px;
+   width: auto;
+   max-width: 100%;
+}
+
+.menu-btn {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1001;
+  margin-left: 15px;
+}
+
+.menu-btn .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+.menu-btn.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+}*/
