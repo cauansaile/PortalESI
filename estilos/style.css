@@ -108,6 +108,21 @@ nav > .links > a {
     cursor: pointer;
  }
 
+ nav > .links > #face:hover{
+    color: #0866ff;
+    transition-duration: 0.3s;
+ }
+
+  nav > .links > #insta:hover{
+    color: #d300e8;
+    transition-duration: 0.3s;
+ }
+
+ nav > .links > #whats:hover{
+    color: #25d366;
+    transition-duration: 0.3s;
+ }
+
  .container {
     display: flex;
     flex: 1;
@@ -403,6 +418,9 @@ main.menu-open {
 }
 
 /* Animação para virar X 
+
+
+
 .menu.active .bar1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
