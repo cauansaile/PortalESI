@@ -6,6 +6,14 @@ const main = document.querySelector('main')
     main.classList.toggle('menu-open')
     });
 
+  document.querySelectorAll('.menusand a').forEach(link => {
+   link.addEventListener('click', () => {
+    menusand.classList.remove('active');
+    menu.classList.remove('active');
+  });
+});
+
+
 
 
 function abrirLightbox(el){
