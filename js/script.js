@@ -6,12 +6,19 @@ const main = document.querySelector('main')
     main.classList.toggle('menu-open')
     });
 
-  document.querySelectorAll('.menusand a').forEach(link => {
-   link.addEventListener('click', () => {
-    menusand.classList.remove('active');
-    menu.classList.remove('active');
-  });
-});
+
+   
+
+    if(innerWidth <= 768) {
+    document.querySelectorAll('.menu-sand a').forEach(link => {
+        link.addEventListener('click', () => {
+            menusand.classList.remove('active');
+            menu.classList.remove('active');
+            });
+        });
+        
+    }
+  /**/
 
 
 
