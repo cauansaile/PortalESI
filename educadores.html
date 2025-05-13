@@ -10,13 +10,29 @@
 
     <style>
 
-        
+         nav > .links > #face:hover{
+            color: #0866ff;
+            transition-duration: 0.3s;
+        }
+
+        nav > .links > #insta:hover{
+            color: #d300e8;
+            transition-duration: 0.3s;
+        }
+
+        nav > .links > #whats:hover{
+            color: #25d366;
+            transition-duration: 0.3s;
+        }
 
         main{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 30px;
             justify-items: center;
+            padding: 40px;
+            
+            
         }
 
         main > .prof1{
@@ -30,7 +46,11 @@
             transition: transform 0.2s;
             max-height: 300px;
 
+            
+
         }
+
+       
 
         main > .prof1:hover{
             transform: rotate(-2deg) scale(1.02);
@@ -85,13 +105,14 @@
             color: white;
         }
 
+        
+
 
     </style>
 </head>
 <body>
     <header>
         <h1><a href="index.html">Escola Sonho Infantil</a> </h1>
-        <h2>Matriculas 2025</h2>
         <div class="imglogo"><img src="imagens/images-removebg-preview.png" alt="Logo ESI" class="logoesi"></div>
         
         
@@ -102,9 +123,9 @@
             <div class="menu"><span class="material-icons md-24" id="menu" >menu</span></div>
             
             <div class="links">
-                <a href="https://www.instagram.com/sonhoinfantilescola?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
-                <a href="#">WhatsApp</a>
-                <a href="https://www.facebook.com/escolaehotelzinhosonhoinfantil?locale=pt_BR" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/sonhoinfantilescola?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" id="insta">Instagram</a>
+                <a href="#" id="whats">WhatsApp</a>
+                <a href="https://www.facebook.com/escolaehotelzinhosonhoinfantil?locale=pt_BR" target="_blank" id="face">Facebook</a>
             </div>
 
             
@@ -114,36 +135,37 @@
     <div class="container">
         <div class="menu-sand">
             <a href="educadores.html">Nossos educadores</a>
-            <a href="#">Nossa metodologia</a>
-            <a href="#">Apoio socioemocional</a>
-            <a href="#">Atividades extracurriculares</a>
-            <a href="contato.html">Contato</a>
+            <a href="index.html">Nossa metodologia</a>
+            <a href="index.html">Apoio socioemocional</a>
+            <a href="index.html">Atividades extracurriculares</a>
+            <a href="index.html">Contato</a>
 
         </div>
+    </div>    
 
+    <h1 style="text-align:center; margin-bottom: 40px; margin-top: 15px;">Nossas Educadoras</h1> 
+    <main >
 
-        <main>
+        
+        <div class="prof1" onclick="abrirLightbox(this)" descricao-legenda="Professora, formada em Letras com Espanhol (UNEB)
+        Pós graduada em Coordenação pedagógica
+        ABA
+        Pós graduanda em Psicopedagogia" >
+            <img src="imagens/foto-carol.png" alt="">
+            <div class="legenda">Carolina Saile <br> Coordenadora</div>
+        </div> 
+        <div class="prof1" onclick="abrirLightbox(this)" descricao-legenda="Diretora da E.S.I há mais de 25 anos, Formada em Pedagogia, especialista em crianças atípicas." >
+            <img src="imagens/foto-angela.png" alt="">
+            <div class="legenda">Ângela Cristina <br> Diretora</div>
+        </div>
+        
 
-            <h1 style="text-align:center; margin-bottom: 40px;">Nossas Educadoras</h1>
-            <div class="prof1" onclick="abrirLightbox(this)" descricao-legenda="Professora, formada em Letras com Espanhol (UNEB)
-            Pós graduada em Coordenação pedagógica
-            ABA
-            Pós graduanda em Psicopedagogia" >
-                <img src="imagens/foto-carol.png" alt="">
-                <div class="legenda">Carolina Saile <br> Coordenadora</div>
+        <div id="lightbox" class="lightbox" onclick="fecharLightbox(event)">
+            <span class="close-btn" onclick="fecharLightbox(event)">×</span>
+            <img id="lightbox-img" src="" alt="Imagem Ampliada">
+            <p id="lightbox-texto"></p>
             </div>
-            <div class="prof1" onclick="abrirLightbox(this)" descricao-legenda="Diretora da E.S.I há mais de 25 anos, Formada em Pedagogia, especialista em crianças atípicas." >
-                <img src="imagens/foto-angela.png" alt="">
-                <div class="legenda">Ângela Cristina <br> Diretora</div>
-            </div>
-            
-
-            <div id="lightbox" class="lightbox" onclick="fecharLightbox(event)">
-                <span class="close-btn" onclick="fecharLightbox(event)">×</span>
-                <img id="lightbox-img" src="" alt="Imagem Ampliada">
-                <p id="lightbox-texto"></p>
-              </div>
-        </main>
+    </main>
 
 
 
